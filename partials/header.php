@@ -23,6 +23,13 @@
                         <a href="index.php?act=chunhiem" class="item btn btn-dark ms-4 me-4">Chủ nhiệm</a>
                         <a href="index.php?act=giaovien" class="item btn btn-dark me-4">Giáo viên</a>
                         <a href="index.php?act=lop" class="item btn btn-dark me-4">Lớp</a>
+                        <a href="index.php?act=hocsinh" class="item btn btn-dark me-4">Học sinh</a>
+                        <a href="index.php?act=phonghoc" class="item btn btn-dark me-4">Phòng Học</a>
+                        <a href="index.php?act=monhoc" class="item btn btn-dark me-4">Môn Học</a>
+                        <a href="index.php?act=diem" class="item btn btn-dark me-4">Kết quả</a>
+                        <a href="index.php?act=phong_lop" class="item btn btn-dark me-4">Phòng Lớp</a>
+                        <a href="index.php?act=xep_loai" class="item btn btn-dark me-4">Xếp Loại</a>
+                        <a href="index.php?act=thong_ke" class="item btn btn-dark me-4">Thống Kê</a>
                         <a href="index.php?act=logout" class="item btn btn-dark me-4">Đăng xuất</a>
                     </div>
                 </div>

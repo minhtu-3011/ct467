@@ -11,7 +11,6 @@ if (isset($_GET['act'])) {
             $_SESSION['login_in'] = false;
             header('location: index.php?act=login');
         case 'home':
-
             include "home.php";
             break;
         case 'chunhiem':
@@ -26,6 +25,37 @@ if (isset($_GET['act'])) {
             $kq = getall_lop();
             include "lop.php";
             break;
+        case 'hocsinh':
+            $kq = getall_hocsinh();
+            include "hocsinh.php";
+            break;
+        case 'phonghoc':
+            $kq = getall_phonghoc();
+            include "phonghoc.php";
+            break;
+        case 'monhoc':
+            $kq = getall_monhoc();
+            include "monhoc.php";
+            break;
+        case 'diem':
+            $kq = getall_diem();
+            include "diem.php";
+            break;
+        case 'phong_lop':
+            $kq = getall_phong_lop();
+            include "phong_lop.php";
+            break;
+        case 'xep_loai':
+            $kq = getall_xep_loai();
+            include "xep_loai.php";
+            break;
+        case 'thong_ke':
+            $kq = getall_thong_ke();
+            include "thong_ke.php";
+            break;
+        
+
+        
         case 'register':
             if (isset($_POST['dangky']) && ($_POST['dangky'])) {
                 $email = $_POST['email'];

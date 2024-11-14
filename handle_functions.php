@@ -25,6 +25,62 @@ function getall_chunhiem(){
     return $kq;
 }
 
+function getall_hocsinh() {
+    $conn = connectdb();
+    $sql = "SELECT * FROM hocsinh";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getall_phonghoc() {
+    $conn = connectdb();
+    $sql = "SELECT * FROM phonghoc";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getall_monhoc() {
+    $conn = connectdb();
+    $sql = "SELECT * FROM monhoc";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getall_diem() {
+    $conn = connectdb();
+    $sql = "SELECT * FROM diem";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getall_phong_lop() {
+    $conn = connectdb();
+    $sql = "SELECT * FROM phong_lop";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getall_xep_loai() {
+    $conn = connectdb();
+    $sql = "SELECT * FROM diem";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+function getall_thong_ke() {
+    $conn = connectdb();
+    $sql = "SELECT * FROM chunhiem";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+
 
 function check_user($email, $pass){
     $conn = connectdb();
